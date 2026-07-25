@@ -5,4 +5,24 @@
   -webkit-text-stroke: 0.2px currentColor; 
 }
 
+.animated-text {
+  color: rgb(239, 36, 151);
+  text-align: center;
+  margin: auto;
+  
+  /* Animation Properties */
+  opacity: 0;
+  animation: floatUp 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
 
+/* Animation Effect */
+@keyframes floatUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
