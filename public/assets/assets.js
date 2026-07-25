@@ -11,19 +11,17 @@ import add_icon from './add_icon.png'
 import email from './email.png'
 import github from './github.png'
 import linkedin from './linkedin.png'
-import google from './google.png'
 import upload_area from './upload_area.png'
-import cam_dark from './cam_dark.png'
-import cam_light from './cam_light.png'
+import cam_dark_1 from './cam_dark_1.jpg'
+import cam_light_1 from './cam_light_1.png'
 import profile_icon from './img0.jpg'
 
 export const assets = {
-    google,
     github,
     linkedin,
     profile_icon,
-    cam_dark,
-    cam_light,
+    cam_dark_1,
+    cam_light_1,
     logo,
     arrow,
     blog_icon,
