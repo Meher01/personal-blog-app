@@ -8,8 +8,9 @@ const Footer = () => {
       <Image src={assets.cam_dark_1} alt='logo' width={110} height={50}/>
     <p className='font-medium text-white' style={{letterSpacing: '1px'}}>All rights reserved © {new Date().getFullYear()}. Copyright @Lily&apos;s Blog</p>
     <div className='flex'>
-    <Image src={assets.github} alt='github' width={50} height={50} className='gap-4 p-2'/>
-    <Image src={assets.linkedin} alt='linkedin' width={50} height={50} className='gap-4 p-2'/>
+    <Image src={assets.github} alt='github' width={50} height={50} className='gap-4 p-2' style={{borderRadius: '35%'}}/>
+    <Image src={assets.linkedin} alt='linkedin' width={50} height={50} className='gap-4 p-2' style={{borderRadius: '35%'}}/>
+    <Image src={assets.email} alt='email' width={50} height={50} className='gap-4 p-2'style={{borderRadius: '35%'}}/>
     </div>
     </div>
   )
