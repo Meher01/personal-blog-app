@@ -1,10 +1,22 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { blog_data } from '@/public/assets/assets';
 import Blog from './Blog';
+import axios from 'axios';
 
 const BlogList = () => {
 
     const [menu, setMenu] = React.useState('All');
+    const [blogs, setBlogs] = useState([]);
+
+    const fetchBlogs = async () => {
+    const response = await axios.get('/api/blog');
+    setBlogs(response.data.blogs);
+    console.log(response.data.blogs);
+    }
+
+    useEffect(() => {
+      fetchBlogs();
+    },[])
 
   return (
     <div className='relative overflow-hidden rounded-[24px] border border-pink-200/400 shadow-lg shadow-pink-200/50 bg-gradient-to-b from-pink-50 to-pink-100 mb-12 ml-10 mr-10'>
@@ -15,8 +27,8 @@ const BlogList = () => {
         <button onClick={()=>setMenu('Lifestyle')} style={{cursor: 'pointer'}} className={menu==="Lifestyle" ? 'bg-pink-500 text-white py-1 px-4 rounded-sm bold' : ""}>Lifestyle</button>
       </div>
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-6 mb-12 xl:mx-24'>
-    {blog_data.filter((item)=> menu==="All"? true: item.category===menu).map((item, index)=>{
-      return <Blog key={index} id={item.id} image={item.image} title={item.title} description={item.description} category={item.category} />
+    {blogs.filter((item)=> menu==="All"? true: item.category===menu).map((item, index)=>{
+      return <Blog key={index} id={item._id} image={item.image} title={item.title} description={item.description} category={item.category} />
 
     })}
       </div>
