@@ -14,7 +14,7 @@ const page = () => {
 
   const fetchBlogData = async () => {
     const response = await axios.get('/api/blog', {
-      params:{
+      params: {
         id: params.id
       }
     })
@@ -23,7 +23,7 @@ const page = () => {
 
   useEffect(() => {
     fetchBlogData();
-  },[]);
+  }, []);
 
   if (!data) {
     return null;
@@ -37,50 +37,52 @@ const page = () => {
   const authorAlt = data.author ? `${data.author} avatar` : 'Author avatar';
 
   return <>
-      <div className='bg-pink-40 py-5 px-5 md:px-12 lg:px-28'>
-        {/* Top Navigation Bar */}
-        <div className='flex justify-between items-center'>
-          <Link href='/'>
-          <Image 
-            src={assets.cam_light_1} 
-            width={100} 
-            height={100} 
-            alt='Camera' 
-            className='w-[130px] sm:w-auto' 
+    <div className='bg-pink-40 py-5 px-5 md:px-12 lg:px-28'>
+      {/* Top Navigation Bar */}
+      <div className='flex justify-between items-center'>
+        <Link href='/'>
+          <Image
+            src={assets.cam_light_1}
+            width={100}
+            height={100}
+            alt='Camera'
+            className='w-[130px] sm:w-auto'
+            loading="eager"
+            style={{ width: 'auto', height: 'auto' }}
           /></Link>
-          <button 
-            className='bold flex items-center gap-2 font-medium py-1 px-3 sm:py-3 sm:px-6 border border-solid border-black active:bg-pink-400 hover:text-white hover:bg-pink-400' 
-            style={{ boxShadow: '0px 6px 6px rgba(241, 17, 129, 0.95)', borderRadius: '12px', cursor: 'pointer' }}
-          >
-            Click Here 
-            <Image src={assets.arrow} width={12} height={12} alt='arrow icon' />
-          </button>
-        </div>
-
-        {/* Blog Title - Correctly placed outside the flex navbar */}
-        <div className='text-center my-5'>
-          <h1 className='text-xl sm:text-3xl font-semibold max-w-[700px] mx-auto text-pink-500'> 
-            {data.title} 
-          </h1>
-          <Image src={authorImage} width={60} height={60} alt={authorAlt} className='w-[60px] h-[60px] rounded-full aspect-square object-cover ml-auto mr-auto mt-2'/>
-          <p className='mt-auto pb-15 max-w-[740px] mx-auto text-pink-600' style={{ fontWeight: '600'}}> {data.author} </p>
-        </div>
+        <button
+          className='bold flex items-center gap-2 font-medium py-1 px-3 sm:py-3 sm:px-6 border border-solid border-black active:bg-pink-400 hover:text-white hover:bg-pink-400'
+          style={{ boxShadow: '0px 6px 6px rgba(241, 17, 129, 0.95)', borderRadius: '12px', cursor: 'pointer' }}
+        >
+          Click Here
+          <Image src={assets.arrow} width={12} height={12} alt='arrow icon' />
+        </button>
       </div>
-      <div className='mx-5 max-w-[800px] md:mx-auto mt-[-100px] mb-10'>
-        <Image className='border-4 border-dashed border-pink-600' src={blogImage} width={1280} height={720} alt={imageAlt} />
-        <div className='blog-content' dangerouslySetInnerHTML={{__html:data.description}}>
 
-        </div>
-        <div className='my-24'>
-          <p className='text-black font-semibold my-4'>~ Do share the article to spread the knowledge. ✨❤️</p>
+      {/* Blog Title - Correctly placed outside the flex navbar */}
+      <div className='text-center my-5'>
+        <h1 className='text-xl sm:text-3xl font-semibold max-w-[700px] mx-auto text-pink-500'>
+          {data.title}
+        </h1>
+        <Image src={authorImage} width={60} height={60} alt={authorAlt} className='w-[60px] h-[60px] rounded-full aspect-square object-cover ml-auto mr-auto mt-2' />
+        <p className='mt-auto pb-15 max-w-[740px] mx-auto text-pink-600' style={{ fontWeight: '600' }}> {data.author} </p>
+      </div>
+    </div>
+    <div className='mx-5 max-w-[800px] md:mx-auto mt-[-100px] mb-5'>
+      <Image className='border-4 border-pink-600' src={blogImage} width={1280} height={720} alt={imageAlt} style={{ width: 'auto', height: 'auto' }} />
+      <div className='blog-content' dangerouslySetInnerHTML={{ __html: data.description }}>
+
+      </div>
+      <div className='my-24'>
+        <p className='text-black font-semibold my-4'>~ Do share the article to spread the knowledge. ✨❤️</p>
         <div className='flex gap-2'>
           <Image src={assets.linkedin} width={50} height={50} alt='LinkedIn' />
           <Image src={assets.email} width={50} height={50} alt='Email' />
         </div>
-        </div>
       </div>
+    </div>
     <Footer />
-    </>;
+  </>;
 }
 
 export default page;

@@ -7,7 +7,9 @@ const Sidebar = () => {
   return (
     <div className='flex flex-col'>
       <div className='px-1 sm:pl-14 py-1 border border-black border-2'>
-        <Image src={assets.cam_light_1} width={110} height={100} alt=''/>
+        <Link href='/admin'>
+          <Image src={assets.cam_light_1} width={110} height={100} alt='Admin dashboard' loading="eager" style={{ width: 'auto', height: 'auto' }} />
+        </Link>
       </div>
 <div className='w-28 sm:w-50 h-[100vh] relative py-5 border border-black border-3'>
 <div className='w-[50%] sm:w-[80%] absolute right-5'>

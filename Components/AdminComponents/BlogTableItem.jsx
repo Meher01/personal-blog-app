@@ -2,7 +2,7 @@ import { assets } from '@/Assets/assets';
 import Image from 'next/image';
 import React from 'react';
 
-const BlogTableItem = ({authorImg, title, author, date, deleteBlog, id, mongoId}) => {
+const BlogTableItem = ({authorImg, title, author, date, deleteBlog, mongoId}) => {
   const BlogDate = new Date(date);
   return (
     <tr className='bg-pink border-t-2 border-b-2'>
