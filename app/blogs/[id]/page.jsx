@@ -68,19 +68,9 @@ const page = () => {
       </div>
       <div className='mx-5 max-w-[800px] md:mx-auto mt-[-100px] mb-10'>
         <Image className='border-4 border-dashed border-pink-600' src={blogImage} width={1280} height={720} alt={imageAlt} />
-        <h1 className='my-8 text-[26px] font-semibold'>Introduction: </h1>
-        <p>{data.description} </p>
-        <h3 className='my-5 text-[18px] font-semibold'>Steps....</h3>
-        <p className='my-3'>Text</p>
-        <p className='my-3'>Text</p>
-        <h3 className='my-5 text-[18px] font-semibold'>Steps....</h3>
-        <p className='my-3'>Text</p>
-        <p className='my-3'>Text</p>
-        <h3 className='my-5 text-[18px] font-semibold'>Steps....</h3>
-        <p className='my-3'>Text</p>
-        <p className='my-3'>Text</p>
-        <h3 className='my-5 text-[18px] font-semibold'>Conclude</h3>
-        <p className='my-3'>Text</p>
+        <div className='blog-content' dangerouslySetInnerHTML={{__html:data.description}}>
+
+        </div>
         <div className='my-24'>
           <p className='text-black font-semibold my-4'>~ Do share the article to spread the knowledge. ✨❤️</p>
         <div className='flex gap-2'>
