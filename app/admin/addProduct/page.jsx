@@ -12,7 +12,7 @@ const page = () => {
     title: "",
     description: "",
     category: "Select",
-    author: "L.P.M Lasya",
+    author: "Lasya Lingam",
     authorImg: assets.profile_icon,
   })
 
@@ -41,7 +41,7 @@ const page = () => {
         title: "",
         description: "",
         category: "Select",
-        author: "L.P.M Lasya",
+        author: "Lasya Lingam",
         authorImg: "/author_img.png",
       });
 
@@ -67,7 +67,7 @@ const page = () => {
         <p className='text-ml mt-4 ml-5 underline font-semibold'>Select Category:</p>
         <select name="category" onChange={onChangeHandler} value={data.category} className='w-40 mt-4 ml-5 px-4 py-2 border' style={{ cursor: 'pointer' }}>
           <option value="Select">Select...</option>
-          <option value="Startup">Startup</option>
+          <option value="Hobbies">Hobbies</option>
           <option value="Technology">Technology</option>
           <option value="Lifestyle">Lifestyle</option>
         </select> <br />

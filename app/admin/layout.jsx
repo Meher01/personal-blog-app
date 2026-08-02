@@ -7,15 +7,17 @@ import 'react-toastify/dist/ReactToastify.css';
 export default function Layout({ children }) {
   return (
     <>
-      <div className='flex'>
+      <div className='flex min-h-screen'>
         <ToastContainer theme="dark" />
         <Sidebar />
-        <div className='flex flex-col w-full border border-2'>
-          <div className='flex items-center justify-between w-full py-17 max-h-[60px] px-11 border-b-4 border-black bg-pink-100'>
-            <h3 className='text-3xl font-semibold'> Admin Settings</h3>
-            <Image src={assets.profile_icon} width={30} height={30} alt='' style={{ borderRadius: '15%', width: 'auto', height: 'auto' }} />
+        <div className='flex flex-col w-full border-2 border-black'>
+          <div className='flex items-center justify-between w-full py-3 px-8 border-b-4 border-black bg-pink-100'>
+            <h3 className='text-2xl font-semibold'>Admin Settings</h3>
+            <Image src={assets.profile_icon} width={72} height={72} alt='' className='h-[72px] w-[72px] rounded-full object-cover' />
           </div>
-          {children}
+          <main className='flex-1 p-6'>
+            {children}
+          </main>
         </div>
       </div>
     </>

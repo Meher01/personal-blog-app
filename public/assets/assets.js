@@ -1,8 +1,4 @@
-import blog_pic_1 from './blog_pic_1.png';
-import blog_pic_2 from './blog_pic_2.png';
-import blog_pic_3 from './blog_pic_3.png';
-import blog_pic_4 from './blog_pic_4.png';
-import blog_pic_5 from './blog_pic_5.png';
+
 import logo from './logo.jpg'
 import blog_icon from './blog_icon.png'
 import arrow from './arrow.png'
@@ -28,56 +24,3 @@ export const assets = {
     email,
     upload_area,
 };
-
-    export const blog_data = [{
-        id:1,
-        title:"A detailed step by step guide to manage your lifestyle",
-        description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
-        image:blog_pic_1,
-        date:Date.now(),
-        category:"Lifestyle",
-        author:"John Doe",
-        author_img:profile_icon
-    },
-    {
-        id:2,
-        title:"How to create an effective startup roadmap or ideas",
-        description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
-        image:blog_pic_2,
-        date:Date.now(),
-        category:"Startup",
-        author:"Rosy",
-        author_img:profile_icon
-    },
-    {
-        id:3,
-        title:"Learning new technology to boost your career in software",
-        description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
-        image:blog_pic_3,
-        date:Date.now(),
-        category:"Technology",
-        author:"Jessica",
-        author_img:profile_icon
-    },
-    {
-        id:4,
-        title:"Tips for getting the most out of apps and software",
-        description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
-        image:blog_pic_4,
-        date:Date.now(),
-        category:"Technology",
-        author:"William",
-        author_img:profile_icon
-    },
-    {
-        id:5,
-        title:"Enhancing your skills and capturing memorable moments",
-        description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the..",
-        image:blog_pic_5,
-        date:Date.now(),
-        category:"Lifestyle",
-        author:"Quincy",
-        author_img:profile_icon
-    },
-    
-]
