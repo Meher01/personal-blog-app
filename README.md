@@ -1,50 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+🌸 𝗜𝗻𝘁𝗿𝗼𝗱𝘂𝗰𝗶𝗻𝗴 𝗠𝘆 𝗣𝗲𝗿𝘀𝗼𝗻𝗮𝗹 𝗕𝗹𝗼𝗴 𝗔𝗽𝗽 — 𝗕𝘂𝗶𝗹𝘁 𝘄𝗶𝘁𝗵 𝗡𝗲𝘅𝘁.𝗷𝘀! 💻✨
 
-## Getting Started
+𝗜’𝗺 𝗲𝘅𝗰𝗶𝘁𝗲𝗱 𝘁𝗼 𝘀𝗵𝗮𝗿𝗲 𝗺𝘆 𝗣𝗲𝗿𝘀𝗼𝗻𝗮𝗹 𝗕𝗹𝗼𝗴 𝗪𝗲𝗯 𝗔𝗽𝗽𝗹𝗶𝗰𝗮𝘁𝗶𝗼𝗻, 𝗮 𝗽𝗿𝗼𝗷𝗲𝗰𝘁 𝗜 𝗯𝘂𝗶𝗹𝘁 𝘁𝗼 𝗰𝗿𝗲𝗮𝘁𝗲 𝗮 𝘀𝗶𝗺𝗽𝗹𝗲, 𝗰𝗿𝗲𝗮𝘁𝗶𝘃𝗲, 𝗮𝗻𝗱 𝗲𝗻𝗴𝗮𝗴𝗶𝗻𝗴 𝘀𝗽𝗮𝗰𝗲 𝗳𝗼𝗿 𝘀𝗵𝗮𝗿𝗶𝗻𝗴 𝘁𝗵𝗼𝘂𝗴𝗵𝘁𝘀, 𝗲𝘅𝗽𝗲𝗿𝗶𝗲𝗻𝗰𝗲𝘀, 𝗵𝗼𝗯𝗯𝗶𝗲𝘀, 𝘁𝗲𝗰𝗵𝗻𝗼𝗹𝗼𝗴𝘆, 𝗮𝗻𝗱 𝗹𝗶𝗳𝗲𝘀𝘁𝘆𝗹𝗲 𝗰𝗼𝗻𝘁𝗲𝗻𝘁. 📝💖
 
-First, run the development server:
+𝗧𝗵𝗶𝘀 𝗽𝗿𝗼𝗷𝗲𝗰𝘁 𝗴𝗮𝘃𝗲 𝗺𝗲 𝗵𝗮𝗻𝗱𝘀-𝗼𝗻 𝗲𝘅𝗽𝗲𝗿𝗶𝗲𝗻𝗰𝗲 𝗶𝗻 𝗯𝘂𝗶𝗹𝗱𝗶𝗻𝗴 𝗮 𝗺𝗼𝗱𝗲𝗿𝗻 𝘄𝗲𝗯 𝗮𝗽𝗽𝗹𝗶𝗰𝗮𝘁𝗶𝗼𝗻 𝘄𝗵𝗶𝗹𝗲 𝘄𝗼𝗿𝗸𝗶𝗻𝗴 𝘄𝗶𝘁𝗵 𝗳𝗿𝗼𝗻𝘁𝗲𝗻𝗱 𝗱𝗲𝘃𝗲𝗹𝗼𝗽𝗺𝗲𝗻𝘁, 𝗱𝗮𝘁𝗮𝗯𝗮𝘀𝗲 𝗶𝗻𝘁𝗲𝗴𝗿𝗮𝘁𝗶𝗼𝗻, 𝗔𝗣𝗜 𝗰𝗼𝗺𝗺𝘂𝗻𝗶𝗰𝗮𝘁𝗶𝗼𝗻, 𝗻𝗼𝘁𝗶𝗳𝗶𝗰𝗮𝘁𝗶𝗼𝗻𝘀, 𝗮𝗻𝗱 𝗿𝗲𝘀𝗽𝗼𝗻𝘀𝗶𝘃𝗲 𝗨𝗜 𝗱𝗲𝘀𝗶𝗴𝗻.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🛠️ 𝗧𝗲𝗰𝗵 𝗦𝘁𝗮𝗰𝗸 𝗨𝘀𝗲𝗱:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🔹 𝗙𝗿𝗮𝗺𝗲𝘄𝗼𝗿𝗸: 𝗡𝗲𝘅𝘁.𝗷𝘀
+🔹 𝗨𝗜 𝗟𝗶𝗯𝗿𝗮𝗿𝘆: 𝗥𝗲𝗮𝗰𝘁
+🔹 𝗟𝗮𝗻𝗴𝘂𝗮𝗴𝗲: 𝗝𝗮𝘃𝗮𝗦𝗰𝗿𝗶𝗽𝘁
+🔹 𝗦𝘁𝘆𝗹𝗶𝗻𝗴: 𝗧𝗮𝗶𝗹𝘄𝗶𝗻𝗱 𝗖𝗦𝗦
+🔹 𝗗𝗮𝘁𝗮𝗯𝗮𝘀𝗲: 𝗠𝗼𝗻𝗴𝗼𝗗𝗕
+🔹 𝗢𝗗𝗠: 𝗠𝗼𝗻𝗴𝗼𝗼𝘀𝗲
+🔹 𝗛𝗧𝗧𝗣 𝗖𝗹𝗶𝗲𝗻𝘁: 𝗔𝘅𝗶𝗼𝘀
+🔹 𝗡𝗼𝘁𝗶𝗳𝗶𝗰𝗮𝘁𝗶𝗼𝗻𝘀: 𝗥𝗲𝗮𝗰𝘁 𝗧𝗼𝗮𝘀𝘁𝗶𝗳𝘆
+🔹 𝗖𝗼𝗱𝗲 𝗤𝘂𝗮𝗹𝗶𝘁𝘆: 𝗘𝗦𝗟𝗶𝗻𝘁
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+✨ 𝗖𝘂𝗿𝗿𝗲𝗻𝘁 𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+💻 𝗖𝗹𝗲𝗮𝗻 𝗮𝗻𝗱 𝗰𝗿𝗲𝗮𝘁𝗶𝘃𝗲 𝗹𝗮𝗽𝘁𝗼𝗽/𝗱𝗲𝘀𝗸𝘁𝗼𝗽 𝗨𝗜
+📝 𝗣𝗲𝗿𝘀𝗼𝗻𝗮𝗹 𝗯𝗹𝗼𝗴 𝗰𝗼𝗻𝘁𝗲𝗻𝘁 𝗮𝗻𝗱 𝗰𝗮𝘁𝗲𝗴𝗼𝗿𝗶𝗲𝘀
+💻 𝗧𝗲𝗰𝗵𝗻𝗼𝗹𝗼𝗴𝘆 𝘀𝗲𝗰𝘁𝗶𝗼𝗻
+🎨 𝗛𝗼𝗯𝗯𝗶𝗲𝘀 𝘀𝗲𝗰𝘁𝗶𝗼𝗻
+🌸 𝗟𝗶𝗳𝗲𝘀𝘁𝘆𝗹𝗲 𝘀𝗲𝗰𝘁𝗶𝗼𝗻
+📩 𝗘𝗺𝗮𝗶𝗹 𝘀𝘂𝗯𝘀𝗰𝗿𝗶𝗽𝘁𝗶𝗼𝗻 𝗶𝗻𝘁𝗲𝗿𝗳𝗮𝗰𝗲 / 𝗨𝘀𝗲𝗿 𝗻𝗼𝘁𝗶𝗳𝗶𝗰𝗮𝘁𝗶𝗼𝗻𝘀  
+📱 𝗥𝗲𝘀𝗽𝗼𝗻𝘀𝗶𝘃𝗲 𝗱𝗲𝘃𝗲𝗹𝗼𝗽𝗺𝗲𝗻𝘁 𝗶𝗻 𝗽𝗿𝗼𝗴𝗿𝗲𝘀𝘀
+🛠️ 𝗔𝗱𝗺𝗶𝗻 𝗣𝗮𝗻𝗲𝗹 𝘄𝗵𝗶𝗰𝗵 𝗶𝘀 𝗵𝗶𝗱𝗱𝗲𝗻 𝘣𝘦𝘤𝘢𝘶𝘴𝘦 𝘪𝘵'𝘴 𝘮𝘪𝘯𝘦!! 😉
 
-## Email reminders for subscribers
+🚀 𝗟𝗶𝘃𝗲 𝗗𝗲𝗺𝗼:
+🌐 𝗣𝗲𝗿𝘀𝗼𝗻𝗮𝗹 𝗕𝗹𝗼𝗴 𝗔𝗽𝗽 (𝗟𝗶𝘃𝗲 𝗗𝗲𝗺𝗼): https://lnkd.in/gHXxQDmK
 
-To send reminder emails when a new blog post is published, add these values to your .env.local file:
+📌 𝗦𝘁𝗮𝘁𝘂𝘀:
 
-```env
-MONGODB_URI=your-mongodb-connection-string
-SMTP_HOST=smtp.gmail.com
-SMTP_PORT=587
-SMTP_USER=your-email@gmail.com
-SMTP_PASS=your-16-character-app-password
-SMTP_FROM=your-email@gmail.com
-NEXT_PUBLIC_SITE_URL=https://personal-blog-app-red.vercel.app
-```
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+𝗧𝗵𝗲 𝗹𝗮𝗽𝘁𝗼𝗽/𝗱𝗲𝘀𝗸𝘁𝗼𝗽 & 𝗺𝗼𝗯𝗶𝗹𝗲/𝗽𝗵𝗼𝗻𝗲 𝘀𝗰𝗿𝗲𝗲𝗻𝘀 are modelled in a way that the experience feels smooth and consistent across different screen sizes.
