@@ -32,9 +32,15 @@ const page = () => {
   const authorImage = data.authorImg && data.authorImg !== '/author_img.png'
     ? data.authorImg
     : (data.author_img ?? assets.profile_icon);
-  const blogImage = data.image ?? assets.blog_pic_1;
+  const blogImage = data.image || assets.blog_pic_1 || '/uploads/default-blog.jpg';
   const imageAlt = data.title ? `${data.title} image` : 'Blog image';
   const authorAlt = data.author ? `${data.author} avatar` : 'Author avatar';
+
+  const normalizeImageSrc = (src) => {
+    if (!src) return '/uploads/default-blog.jpg';
+    if (src.startsWith('http://') || src.startsWith('https://') || src.startsWith('data:')) return src;
+    return src.startsWith('/') ? src : `/${src}`;
+  };
 
   const handleShare = async () => {
     const shareUrl = typeof window !== 'undefined' ? window.location.href : '';
@@ -105,11 +111,9 @@ const page = () => {
 
     <div className='mx-3 sm:mx-5 max-w-5xl md:mx-auto mt-4 sm:mt-8 mb-8 sm:mb-12'>
       <div className='overflow-hidden rounded-[24px] sm:rounded-[32px] border border-slate-200 bg-white shadow-[0_24px_80px_rgba(15,23,42,0.08)]' style={{ boxShadow: '0 0 10px 4px rgba(241, 17, 129, 0.95)', borderRadius: '12px'}}>
-        <Image
+        <img
           className='w-full object-cover'
-          src={blogImage}
-          width={1280}
-          height={720}
+          src={normalizeImageSrc(blogImage)}
           alt={imageAlt}
           style={{ width: '100%', height: 'auto' }}
         />

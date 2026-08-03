@@ -17,6 +17,7 @@ export const assets = {
     profile_icon,
     cam_dark_1,
     cam_light_1,
+    blog_pic_1: cam_light_1,
     logo,
     arrow,
     blog_icon,

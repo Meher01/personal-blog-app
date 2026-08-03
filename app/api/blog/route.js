@@ -1,6 +1,7 @@
 import { ConnectDB } from "@/lib/config/db"
 import { NextResponse } from "next/server"
-import { writeFile } from 'fs/promises'
+import { mkdir, writeFile } from 'fs/promises'
+import path from 'path'
 import BlogModel from '@/lib/models/BlogModel'
 import EmailModel from '@/lib/models/EmailModel'
 import { sendBlogNotificationEmail } from '@/lib/config/mail'
@@ -32,13 +33,23 @@ export async function GET(request) {
 // API Endpoint for uploading blogs
 export async function POST(request) {
   const formData = await request.formData();
-  const timestamp = Date.now();
   const image = formData.get('image');
+
+  if (!image || typeof image.name !== 'string') {
+    return NextResponse.json({ success: false, msg: "Please upload an image" });
+  }
+
+  const timestamp = Date.now();
+  const safeName = image.name.replace(/[^a-zA-Z0-9._-]+/g, '-');
+  const uploadDir = path.join(process.cwd(), 'public', 'uploads');
+  await mkdir(uploadDir, { recursive: true });
+
+  const filePath = path.join(uploadDir, `${timestamp}_${safeName}`);
   const imageByteData = await image.arrayBuffer();
   const buffer = Buffer.from(imageByteData);
-  const path = `./public/${timestamp}_${image.name}`;
-  await writeFile(path, buffer);
-  const imgUrl = `/${timestamp}_${image.name}`;
+  await writeFile(filePath, buffer);
+
+  const imgUrl = `/uploads/${timestamp}_${safeName}`;
   const blogData = {
     title: `${formData.get('title')}`,
     description: `${formData.get('description')}`,
