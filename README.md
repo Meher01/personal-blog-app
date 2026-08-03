@@ -20,6 +20,20 @@ You can start editing the page by modifying `app/page.js`. The page auto-updates
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Email reminders for subscribers
+
+To send reminder emails when a new blog post is published, add these values to your .env.local file:
+
+```env
+MONGODB_URI=your-mongodb-connection-string
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=your-email@gmail.com
+SMTP_PASS=your-16-character-app-password
+SMTP_FROM=your-email@gmail.com
+NEXT_PUBLIC_SITE_URL=https://personal-blog-app-red.vercel.app
+```
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

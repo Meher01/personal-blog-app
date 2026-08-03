@@ -11,7 +11,7 @@ export default function AboutPage() {
               <br/>
               <h1 className='text-4xl font-extrabold text-pink-600 sm:text-5xl'>Lasya Lingam</h1>
             </div>
-            <Link href='/' className='bold inline-flex items-center gap-2 font-medium py-1 py-3 sm:py-3 sm:px-6 border border-solid border-black active:bg-pink-400 hover:text-white hover:bg-pink-400' style={{ boxShadow: '0px 6px 6px rgba(241, 17, 129, 0.95)', borderRadius: '12px', cursor: 'pointer' }}>
+            <Link href='/' className='bold inline-flex items-center justify-center gap-2 font-medium px-3 py-2 text-sm sm:py-3 sm:px-6 border border-solid border-black active:bg-pink-400 hover:text-white hover:bg-pink-400 active:text-white' style={{ boxShadow: '0px 6px 6px rgba(241, 17, 129, 0.95)', borderRadius: '12px', cursor: 'pointer' }}>
               Back to Home
             </Link>
           </div>

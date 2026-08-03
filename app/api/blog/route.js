@@ -2,6 +2,8 @@ import { ConnectDB } from "@/lib/config/db"
 import { NextResponse } from "next/server"
 import { writeFile } from 'fs/promises'
 import BlogModel from '@/lib/models/BlogModel'
+import EmailModel from '@/lib/models/EmailModel'
+import { sendBlogNotificationEmail } from '@/lib/config/mail'
 
 const fs = require('fs')
 
@@ -45,8 +47,21 @@ export async function POST(request) {
     image: `${imgUrl}`,
     authorImg: `${formData.get('authorImg')}`
   }
-  await BlogModel.create(blogData);
+  const blog = await BlogModel.create(blogData);
   console.log("Blog Created");
+
+  try {
+    const subscribers = await EmailModel.find({});
+    const blogUrl = `/blogs/${blog._id}`;
+    await sendBlogNotificationEmail({
+      blogTitle: blog.title,
+      blogDescription: blog.description,
+      blogUrl,
+      subscribers,
+    });
+  } catch (mailError) {
+    console.error('Failed to send reminder emails:', mailError);
+  }
 
   return NextResponse.json({ success: true, msg: "Blog Added" })
 }
