@@ -21,6 +21,24 @@ Explore the live application here:
 - **Notifications:** React Toastify
 - **Code Quality:** ESLint
 
+## 🔐 Environment variables
+
+The blog API requires these variables in local `.env.local` and in the Vercel
+project settings for the Production environment:
+
+```env
+MONGODB_URI=mongodb+srv://<username>:<password>@<cluster>/<database>
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=<gmail-address>
+SMTP_PASS=<gmail-app-password>
+SMTP_FROM=<gmail-address>
+NEXT_PUBLIC_SITE_URL=https://personal-blog-app-red.vercel.app
+```
+
+After changing a Vercel variable, redeploy the project. MongoDB Atlas must also
+allow connections from Vercel by configuring its network access rules.
+
 
 ## ✨ Features
 
