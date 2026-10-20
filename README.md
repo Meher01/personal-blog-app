@@ -21,6 +21,7 @@ Explore the live application here:
 - **Notifications:** React Toastify
 - **Code Quality:** ESLint
 
+
 ## ✨ Features
 
 - **Clean & Creative UI:** Polished interface optimized for laptop and desktop views.
